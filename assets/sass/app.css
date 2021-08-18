@@ -1144,6 +1144,12 @@ body::-webkit-scrollbar-track {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .about-exp__sign {
+    font-size: 46px;
+  }
+}
+
 .projects {
   min-height: 1300px;
 }
@@ -1224,7 +1230,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .projects-btn {
     padding-top: 40px;
     padding-left: 35px;
@@ -1241,11 +1247,11 @@ body::-webkit-scrollbar-track {
     padding-left: 15px;
   }
   .projects-post__item-1-1 {
-    padding-right: 0;
+    padding-right: 0px;
   }
   .projects-post__item-1-2 {
     padding-top: 20px;
-    padding-left: 0;
+    padding-left: 0px;
   }
   .projects-post__item-1-2 .post-span {
     padding-left: 20px;
