@@ -76,31 +76,27 @@
     }
 }
 
-@include maxW(420px) {
+@include maxW(460px) {
     .projects-btn {
         padding-top: 40px;
         padding-left: 35px;
         margin-bottom: 30px;
     }
-
     .fashion-span-right {
         padding-left: 20px !important;
         padding-bottom: 20px;
-
     }
-
     .projects-post__item-2 {
         padding-left: 15px;
     }
     .projects-post__item-1 {
         padding-left: 15px;
-&-1 {
-    padding-right: 0;
-}
-
+        &-1 {
+            padding-right: 0px;
+        }
         &-2 {
             padding-top: 20px;
-            padding-left: 0;
+            padding-left: 0px;
             .post-span {
                 padding-left: 20px;
             }
@@ -108,6 +104,5 @@
     }
     .post-span {
         font-size: 14px;
-
     }
 }
