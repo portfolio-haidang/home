@@ -1,0 +1,11 @@
+@mixin maxW($breakpoints) {
+    @media screen and (max-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin minW($breakpoints) {
+    @media screen and (min-width: $breakpoints) {
+        @content;
+    }
+}
