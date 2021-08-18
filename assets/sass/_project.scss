@@ -1,6 +1,11 @@
 .projects {
     min-height: 1300px;
 
+    &-btn {
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+
     &-post {
         &__item-1 {
             position: relative;
@@ -68,5 +73,41 @@
 
     .projects-post__item-1 {
         padding-left: 50px;
+    }
+}
+
+@include maxW(320px) {
+    .projects-btn {
+        padding-top: 40px;
+        padding-left: 35px;
+        margin-bottom: 30px;
+    }
+
+    .fashion-span-right {
+        padding-left: 20px !important;
+        padding-bottom: 20px;
+
+    }
+
+    .projects-post__item-2 {
+        padding-left: 15px;
+    }
+    .projects-post__item-1 {
+        padding-left: 15px;
+&-1 {
+    padding-right: 0;
+}
+
+        &-2 {
+            padding-top: 20px;
+            padding-left: 0;
+            .post-span {
+                padding-left: 20px;
+            }
+        }
+    }
+    .post-span {
+        font-size: 14px;
+
     }
 }

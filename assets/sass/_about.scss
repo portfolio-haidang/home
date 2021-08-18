@@ -3,6 +3,9 @@
         &__title {
             font-size: 24px;
             text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
         }
 
         &__content {
@@ -25,6 +28,9 @@
 
         &__name {
             font-size: 24px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
         }
 
         &__post {
@@ -65,6 +71,9 @@
         &__title {
             font-size: 24px;
             text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
         }
 
         &-posts {
@@ -100,18 +109,27 @@
 @include maxW(600px) {
     .about {
         &-exp__title {
-            font-size: 32px !important;
+            font-size: 30px !important;
             color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
         }
 
         &-edu__name {
-            font-size: 32px !important;
+            font-size: 30px !important;
             color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
         }
 
         &-work__title {
-            font-size: 32px !important;
+            font-size: 30px !important;
             color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
         }
     }
 }

@@ -1010,6 +1010,9 @@ body::-webkit-scrollbar-track {
 .about-exp__title {
   font-size: 24px;
   text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 
 .about-exp__content {
@@ -1037,6 +1040,9 @@ body::-webkit-scrollbar-track {
 
 .about-edu__name {
   font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 
 .about-edu__post {
@@ -1075,6 +1081,9 @@ body::-webkit-scrollbar-track {
 .about-work__title {
   font-size: 24px;
   text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 
 .about-work-posts {
@@ -1113,21 +1122,35 @@ body::-webkit-scrollbar-track {
 
 @media screen and (max-width: 600px) {
   .about-exp__title {
-    font-size: 32px !important;
+    font-size: 30px !important;
     color: #ecd71a;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
   .about-edu__name {
-    font-size: 32px !important;
+    font-size: 30px !important;
     color: #ecd71a;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
   .about-work__title {
-    font-size: 32px !important;
+    font-size: 30px !important;
     color: #ecd71a;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
 }
 
 .projects {
   min-height: 1300px;
+}
+
+.projects-btn {
+  padding-top: 100px;
+  padding-left: 100px;
 }
 
 .projects-post__item-1 {
@@ -1198,6 +1221,37 @@ body::-webkit-scrollbar-track {
   }
   .projects-post__item-1 {
     padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects-btn {
+    padding-top: 40px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+  }
+  .fashion-span-right {
+    padding-left: 20px !important;
+    padding-bottom: 20px;
+  }
+  .projects-post__item-2 {
+    padding-left: 15px;
+  }
+  .projects-post__item-1 {
+    padding-left: 15px;
+  }
+  .projects-post__item-1-1 {
+    padding-right: 0;
+  }
+  .projects-post__item-1-2 {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .projects-post__item-1-2 .post-span {
+    padding-left: 20px;
+  }
+  .post-span {
+    font-size: 14px;
   }
 }
 
@@ -1345,7 +1399,7 @@ body::-webkit-scrollbar-track {
 
 .services-list__item ion-icon {
   font-size: 64px;
-  color: rgba(204, 184, 0, 0.644);
+  color: #f5d15c;
   margin-bottom: 10px;
 }
 
@@ -1374,8 +1428,10 @@ body::-webkit-scrollbar-track {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #cecece;
-  display: none;
+  background-color: rgba(218, 218, 218, 0.993);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .services-list__item-hidden__item p {
@@ -1396,7 +1452,7 @@ body::-webkit-scrollbar-track {
 }
 
 .services-list__item:hover > .services-list__item-hidden {
-  display: block;
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
@@ -1416,7 +1472,7 @@ body::-webkit-scrollbar-track {
             align-items: center;
   }
   .services-list__item {
-    width: 60%;
+    width: 95%;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -1489,7 +1545,7 @@ body {
 }
 
 .cursor__inner {
-  z-index: 99999999999;
+  z-index: 999999;
   pointer-events: none;
   position: absolute;
   top: 0;
