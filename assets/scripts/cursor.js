@@ -1,5 +1,5 @@
 {
-    // Some help functions.
+
     const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
     const lineEq = (y2, y1, x2, x1, currentVal) => {
         let m = (y2 - y1) / (x2 - x1);
@@ -24,14 +24,11 @@
         return { x: posx, y: posy }
     }
 
-    // Window sizes.
     let winsize;
     const calcWinsize = () => winsize = { width: window.innerWidth, height: window.innerHeight };
     calcWinsize();
-    // Recalculate window sizes on resize.
     window.addEventListener('resize', calcWinsize);
 
-    // Custom mouse cursor.
     class CursorFx {
         constructor(el) {
             this.DOM = { el: el };
@@ -77,10 +74,17 @@
 
     const cursor = new CursorFx(document.querySelector('.cursor'));
 
-    // Custom cursor chnages state when hovering on elements with 'data-hover'.
     [...document.querySelectorAll('[data-hover]')].forEach((link) => {
         link.addEventListener('mouseenter', () => cursor.enter());
         link.addEventListener('mouseleave', () => cursor.leave());
         link.addEventListener('click', () => cursor.click());
     });
 }
+
+// loading page
+window.addEventListener('load', () => {
+    document.querySelector(".lds-roller").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".lds-roller").style.display = "none"
+    }, 5000)
+})
