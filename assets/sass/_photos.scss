@@ -91,6 +91,9 @@
 
 @include maxW(400px) {
     .photos {
+        &-btn {
+            margin-top: 0;
+        }
         &-list {
             display: grid;
             grid-template-columns: 1fr;
