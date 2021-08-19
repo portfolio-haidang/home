@@ -1,7 +1,7 @@
 .body-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7338px;
+    // grid-template-rows: 7338px;
     grid-gap: 0;
     grid-template-areas:
         'space space nav content content content content content'

@@ -14,7 +14,7 @@
         img {
             transform: scale(1);
             transition: all 0.3s linear;
-
+            // max-width: 600px;
             &:hover {
                 transform: scale(1.2);
 
@@ -59,13 +59,44 @@
     }
 }
 
-@include maxW(600px) {
+@include maxW(770px) {
+    .photos {
+        &-list {
+            grid-gap: 0 40px;
+        }
+
+        &-column {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include min-maxW(400px,600px){
+    .photos {
+        &-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0 20px;
+        }
+
+        &-column {
+            margin-bottom: 40px;
+
+            &:nth-child(3) {
+                grid-column: 1/3;
+            }
+        }
+    }
+}
+
+@include maxW(400px) {
     .photos {
         &-list {
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 0 60px;
         }
+
         &-column {
             margin-bottom: 60px;
         }
