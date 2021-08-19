@@ -114,12 +114,55 @@
     }
 }
 
-@include maxW(600px) {
+@include maxW(990px) {
+
+    .footer-info{
+    font-size: 10px;    
+    }
+    .footer-nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        text-align: center;
+        font-size: 16px;
+        &__item:nth-child(7) {
+            grid-column: 1/4;
+        }
+    }
+
+    .footer-contact__phone {
+        font-size: 10px;
+    }
+
+    .footer-address a {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .footer-social {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        &__item {
+            font-size: 18px;
+            margin: 0px 10px;
+        }
+    }
+
+}
+
+
+@include maxW(770px) {
     .footer {
         &-social {
             margin-left: 60px;
             margin-right: 60px;
         }
+
         &-info {
             flex-direction: column;
             font-size: 10px;
@@ -128,6 +171,7 @@
 
         &-contact {
             text-align: center;
+
             p {
                 font-size: 16px;
                 font-weight: 500;
@@ -137,6 +181,7 @@
 
         &-address {
             text-align: center;
+
             p {
                 font-size: 16px;
                 font-weight: 500;
@@ -167,27 +212,29 @@
             margin-right: 10px;
         }
 
-    &-address {
-        p {
-            font-size: 12px;
+        &-address {
+            p {
+                font-size: 12px;
+            }
         }
-    }
-    &-contact {
-        p {
-            font-size: 12px;
-        }
-    }
 
-    &-nav-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 10px;
-        text-align: center;
-        font-size: 16px;
-        &__item:nth-child(7) {
-            grid-column: 1/4;
+        &-contact {
+            p {
+                font-size: 12px;
+            }
         }
-    }
+
+        &-nav-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+            text-align: center;
+            font-size: 16px;
+
+            &__item:nth-child(7) {
+                grid-column: 1/4;
+            }
+        }
     }
 }

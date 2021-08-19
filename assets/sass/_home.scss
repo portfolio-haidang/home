@@ -82,13 +82,43 @@
     }
 }
 
+@include maxW(770px) {
+    .home {
+        margin-top: 20px;
+        &-wapper {
+            min-height: 500px;
+        }
+
+        &-left {
+            display: none;
+        }
+
+        &-right {
+
+            h1 {
+                font-size: 60px;
+                color: rgb(0, 0, 0);
+            }
+
+            p {
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+            }
+
+            .home-right__name {
+                color: rgb(14, 14, 14);
+                font-weight: 600;
+                letter-spacing: 3px;
+            }
+
+            a {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
 @include maxW(600px) {
     .home {
-        background-image: url('../images/home-baner.png');
-        background-repeat: no-repeat;
-        object-fit: cover;
-        background-size: 100%;
-        z-index: -1;
 
         &-wapper {
             min-height: 500px;
@@ -99,16 +129,15 @@
         }
 
         &-right {
-            margin-top: 60px;
 
             h1 {
                 font-size: 60px;
-                color: rgb(231, 217, 26);
+                color: rgb(0, 0, 0);
             }
 
             p {
                 font-size: 18px;
-                color: rgb(190, 190, 190);
+                color: rgb(0, 0, 0);
             }
 
             .home-right__name {
@@ -118,7 +147,7 @@
             }
 
             a {
-                color: rgb(248, 248, 248);
+                color: rgb(0, 0, 0);
             }
         }
     }
@@ -137,11 +166,11 @@
 
             .home-right__name {
                 letter-spacing: 0;
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
             p {
                 
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
         }
     }
