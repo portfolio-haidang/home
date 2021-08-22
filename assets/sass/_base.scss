@@ -4,13 +4,13 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
-
+    
     &::-webkit-scrollbar {
         width: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-image: linear-gradient(180deg, #f5ee1c 0%, #fab04f 99%);
+        background-image: linear-gradient(180deg, #f56c1c 0%, #bce214 99%);
         border-radius: 7px;
     }
 
